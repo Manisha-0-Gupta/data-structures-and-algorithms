@@ -7,12 +7,12 @@ class TextEditor():
             self.back = Stack()
             self.current = ""
 
-      def write(self,word):
+      def write(self,text):
             self.back.push(self.current)
 
             while not self.forward.is_empty():
                   self.forward.pop()
-            self.current += word
+            self.current += text
 
 
       def undo(self):
