@@ -14,7 +14,7 @@ def is_balanced(expression):
                   if stack.is_empty():
                         return False
 
-                  if stack.top() != char:
+                  if stack.peek() != char:
                         return False
 
                   stack.pop()
